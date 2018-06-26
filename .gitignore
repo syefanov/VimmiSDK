@@ -1,5 +1,4 @@
 *.DS_Store
-GoogleCast.framework/
 Cartfile
 Carthage/
 VimmiSDKDemo/
