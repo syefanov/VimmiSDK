@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VMMPlayerOverlayView" customModule="VimmiSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="ROn-xr-cE8" id="lic-3Q-JdP"/>
+                <outlet property="labelText" destination="E9n-k9-mFM" id="nNm-1v-hYv"/>
+                <outlet property="overlayImage" destination="CiY-9Z-A66" id="Mgr-mG-eTZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ROn-xr-cE8">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CiY-9Z-A66">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9n-k9-mFM">
+                    <rect key="frame" x="10" y="105.5" width="355" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="ihc-tx-zCR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CiY-9Z-A66" firstAttribute="leading" secondItem="ROn-xr-cE8" secondAttribute="leading" id="DUL-wo-WGZ"/>
+                <constraint firstItem="E9n-k9-mFM" firstAttribute="centerX" secondItem="ROn-xr-cE8" secondAttribute="centerX" id="E6E-l0-DwV"/>
+                <constraint firstItem="E9n-k9-mFM" firstAttribute="centerY" secondItem="ROn-xr-cE8" secondAttribute="centerY" id="JBo-z6-Otn"/>
+                <constraint firstAttribute="trailing" secondItem="E9n-k9-mFM" secondAttribute="trailing" constant="10" id="P5l-PM-6zC"/>
+                <constraint firstAttribute="trailing" secondItem="CiY-9Z-A66" secondAttribute="trailing" id="YyI-5P-q3E"/>
+                <constraint firstItem="CiY-9Z-A66" firstAttribute="top" secondItem="ROn-xr-cE8" secondAttribute="top" id="dD8-hK-1s3"/>
+                <constraint firstAttribute="bottom" secondItem="CiY-9Z-A66" secondAttribute="bottom" id="jMx-IS-QLH"/>
+                <constraint firstItem="E9n-k9-mFM" firstAttribute="leading" secondItem="ROn-xr-cE8" secondAttribute="leading" constant="10" id="omz-kv-af0"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-23" y="-460"/>
+        </view>
+    </objects>
+</document>
