@@ -1,2 +1,6 @@
-
-GoogleCast.framework/GoogleCastUIResources.bundle/Icons/cast_disconnected_24pt@2x.png
+*.DS_Store
+GoogleCast.framework/
+Cartfile
+Carthage/
+VimmiSDKDemo/
+*.xcuserstate
