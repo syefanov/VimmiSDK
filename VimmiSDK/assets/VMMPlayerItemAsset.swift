@@ -9,7 +9,7 @@
 import Foundation
 import AVKit
 
-protocol VMMPlayerItemAsset: VMMAsset {
+@objc public protocol VMMPlayerItemAsset: VMMAsset {
     
     var asset : AVURLAsset? { get set }
     var playerItem: AVPlayerItem? { get set }
