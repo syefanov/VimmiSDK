@@ -4,4 +4,4 @@ Carthage/
 VimmiSDKDemo/
 *.xcuserstate
 VimmiSDK.xcodeproj/project.xcworkspace/xcuserdata/syefanov.xcuserdatad/UserInterfaceState.xcuserstate
-*.xcuserstate
+*.xcuserdatad

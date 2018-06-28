@@ -83,7 +83,7 @@ fileprivate let assetKeys = ["playable", "hasProtectedContent", "duration"]
         })
     }
     
-    func stopLoadingAsset() {
+    @objc public func stopLoadingAsset() {
         self.asset?.cancelLoading()
     }
     
