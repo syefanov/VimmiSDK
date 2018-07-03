@@ -41,6 +41,10 @@ import GoogleCast
             shared.currentChromecastPlayer!.playAsset(asset as! VMMVideoAsset)
         }
         else {
+            if shared.registeredPlayer?.isPlaying == true {
+                shared.registeredPlayer?.stopPlaying()
+                shared.registeredPlayer?.currentAsset = nil
+            }
             shared.registeredPlayer?.currentAsset = asset
             shared.registeredPlayer?.play()
         }
